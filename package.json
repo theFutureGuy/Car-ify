@@ -1,42 +1,29 @@
 {
-  "name": "car-crud",
+  "name": "Cars-ify",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
+  "description": "A blazing fast REST APIs with Node.js, MongoDB, Fastify and Swagger.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js ./src/index.js",
+    "seed": "node ./src/helpers/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashiq A ",
+  "license": "ISC",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "lodash": "^4.17.15",
-    "prop-types": "^15.7.2",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-scripts": "3.0.1",
-    "uuid": "^7.0.3"
+    "@fastify/static": "^6.0.0",
+    "@fastify/swagger": "^6.1.1",
+    "boom": "^7.3.0",
+    "dotenv": "^16.4.4",
+    "fastify": "^2.15.3",
+    "fastify-gql": "^0.2.1",
+    "fastify-mongodb": "^1.0.1",
+    "fastify-swagger": "^5.2.0",
+    "graphql": "^14.3.0",
+    "mongoose": "^5.13.22"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^3.0.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint": "./node_modules/.bin/eslint src"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "development": [
-    "last 1 chrome version",
-    "last 1 firefox version",
-    "last 1 safari version"
-  ]
+    "faker": "^4.1.0",
+    "nodemon": "^3.0.3"
+  }
 }
